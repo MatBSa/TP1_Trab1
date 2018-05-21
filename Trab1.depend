@@ -1,33 +1,81 @@
 # depslib dependency file v1.0
-1523907156 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\entidades.cpp
+1526759520 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\entidades.cpp
 	"Entidades.hpp"
 	<iostream>
 
-1514140574 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\main.cpp
+1526759520 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\main.cpp
 	<iostream>
+	"Dominios.hpp"
+	"Entidades.hpp"
+	"TestesDominios.hpp"
+	"TestesEntidades.hpp"
+	<string>
 
-1523907156 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesdominios.cpp
+1526759520 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesdominios.cpp
 	"Dominios.hpp"
 	<iostream>
 	"TestesDominios.hpp"
+
+1526759520 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesentidades.cpp
+	"TestesEntidades.hpp"
 	<iostream>
+	"Entidades.hpp"
 
-1523023520 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesentidades.cpp
-
-1523907156 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\dominios.cpp
+1526759520 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\dominios.cpp
 	"Dominios.hpp"
 	<iostream>
 	<math.h>
 
-1523918441 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\dominios.hpp
+1526759520 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\dominios.hpp
 	<stdexcept>
 
-1523920059 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\entidades.hpp
+1526759520 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\entidades.hpp
 	<iostream>
 	"Dominios.hpp"
 
-1523919679 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesdominios.hpp
+1526759520 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesdominios.hpp
 	"Dominios.hpp"
 	<iostream>
 	<string>
+
+1526759520 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\testesentidades.hpp
+	"Dominios.hpp"
+	"Entidades.hpp"
+	<iostream>
+	<string>
+
+1526918014 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\stubs.cpp
+	"Stubs.hpp"
+
+1526917923 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\stubs.hpp
+	"Interface.hpp"
+	<stdexcept>
+	<iostream>
+
+1526940887 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\interface.hpp
+	"Dominios.hpp"
+	"Entidades.hpp"
+	<stdexcept>
+
+1526928480 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\controladoras.cpp
+	"Controladoras.hpp"
+	"Comandos.hpp"
+
+1526926426 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\controladoras.hpp
+	"Interface.hpp"
+	"Dominios.hpp"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+
+1526928480 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\comandos.hpp
+	"Interface.hpp"
+	"Dominios.hpp"
+	"Entidades.hpp"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+
+1526934617 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\comandos.cpp
+	"Comandos.hpp"
 
