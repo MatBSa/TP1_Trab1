@@ -98,7 +98,7 @@ bool StubSVocabulario ::incluirTermo(Termo *termo) throw(runtime_error)
 
 
 
-switch (resultado)
+    switch (resultado)
     {
 
     case TRIGGER_SUCESSO:
@@ -112,7 +112,7 @@ switch (resultado)
         break;
 
     case TRIGGER_ERRO_DE_SISTEMA:
-            throw runtime_error("erro de sistema");
+        throw runtime_error("erro de sistema");
         break;
     }
 
@@ -122,6 +122,57 @@ switch (resultado)
 
 Termo StubSVocabulario :: pesquisarTermo(Nome& nomeTermo) throw(runtime_error)
 {
+    Nome nomeSucesso, nomeFalha, nomeErro, nomeSet;
+    ClasseDeTermo classeSucesso;
+    Data dataSucesso;
+    int resultado;
+
+    nomeFalha.setNome("Circunvizinhanca");
+    nomeErro.setNome("Marco");
+
+    nomeSucesso.setNome("Computacao");
+    classeSucesso.setClasse("Sucesso na classe");
+    dataSucesso.setData("22/05/2018");
+
+    Termo *termoSucesso;
+    termoSucesso->setNome(nomeSucesso);
+    termoSucesso->setClasse(classeSucesso);
+    termoSucesso->setData(dataSucesso);
+
+    Termo *termoFalha;
+    nomeSet.setNome("Falha");
+    termoFalha->setNome(nomeSet);
+
+
+    if(nomeTermo.getNome() == nomeSucesso.getNome()){
+            resultado = TRIGGER_SUCESSO;
+    }
+    if(nomeTermo.getNome() == nomeFalha.getNome()){
+            resultado = TRIGGER_FALHA;
+    }
+    if(nomeTermo.getNome() == nomeErro.getNome()){
+    resultado = TRIGGER_ERRO_DE_SISTEMA;
+    }
+
+    switch (resultado)
+    {
+
+    case TRIGGER_SUCESSO:
+
+        return *termoSucesso;
+        break;
+
+    case TRIGGER_FALHA:
+
+        return *termoFalha;
+        break;
+
+    case TRIGGER_ERRO_DE_SISTEMA:
+        throw runtime_error("erro de sistema");
+        break;
+    }
+
+    return *termoFalha;
 
 }
 

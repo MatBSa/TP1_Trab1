@@ -15,9 +15,9 @@ class StubSVocabulario: public ISVocabulario
 
 public:
 
-    const static int TRIGGER_SUCESSO = 10;
-    const static int TRIGGER_FALHA = 100;
-    const static int TRIGGER_ERRO_DE_SISTEMA = 999;
+    const static int TRIGGER_SUCESSO = 111;
+    const static int TRIGGER_FALHA = 222;
+    const static int TRIGGER_ERRO_DE_SISTEMA = 333;
 
 
     bool incluirTermo(Termo*) throw(runtime_error);
