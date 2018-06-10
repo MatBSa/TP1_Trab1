@@ -25,16 +25,19 @@ public:
     bool alterarTermo(Nome&, ClasseDeTermo&) throw(runtime_error);
     bool removerTermo(Nome&) throw(runtime_error);
 
-    bool incluirDefTermo(TextoDef&, Data) throw(runtime_error);
-    TextoDef pesquisarDefTermo(Nome&) throw(runtime_error);
-    bool alterarDefTermo(Nome&, TextoDef&) throw(runtime_error);
+    bool incluirDefTermo(TextoDef&, Data&) throw(runtime_error);
+    Definicao pesquisarDefTermo(Nome&) throw(runtime_error);
+    bool alterarDefTermo(Nome&, Definicao&) throw(runtime_error);
     bool removerDefTermo(Nome&) throw(runtime_error);
 
     bool inserirVocabulario(Nome&, TextoDef&, Idioma&, Data&) throw(runtime_error);
-    VocabContr pesquisarNomeVocabulario(Nome&) throw(runtime_error);
-    bool alterarVocabulario(Nome&, TextoDef&, Idioma&) throw(runtime_error);
+    VocabContr pesquisarDadosVocabulario(Nome&) throw(runtime_error);
+    bool alterarDefVocabulario(Nome&, TextoDef&) throw(runtime_error);
+    bool trocarIdiomaVocabulario(Nome&, Idioma&);
+    Nome listarNomeVocabulario() throw(runtime_error);
     bool removerVocabulario(Nome&) throw(runtime_error);
-    TextoDef alterarDefVocabulario(Nome&, TextoDef&) throw(runtime_error);
+
+
 };
 
 

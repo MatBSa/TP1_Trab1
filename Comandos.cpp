@@ -10,7 +10,7 @@ void ComandoIAVocabularioLisNomesVoc::executar(ISVocabulario* cntrSVocabulario) 
 
     // Solicitar serviço.
 
-    vocabulario = cntrSVocabulario->retornaVocabularios();
+    vocabulario = cntrSVocabulario->listNomeVocabularios();
 
     if(vocabulario.getNome() == "Falha")
     {

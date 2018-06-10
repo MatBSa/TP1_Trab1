@@ -51,21 +51,21 @@ class ISVocabulario
 public:
 
     virtual bool incluirTermo(Termo*) throw(runtime_error);
-    virtual Termo pesquisarNomeTermo(Nome&) throw(runtime_error);
+    virtual Termo pesquisarTermo(Nome&) throw(runtime_error);
     virtual bool alterarTermo(Nome&, ClasseDeTermo&) throw(runtime_error);
     virtual bool removerTermo(Nome&) throw(runtime_error);
 
     virtual bool incluirDefTermo(TextoDef&, Data&) throw(runtime_error);
-    virtual TextoDef pesquisarDefTermo(Nome&) throw(runtime_error);
-    virtual bool alterarDefTermo(Nome&, TextoDef&) throw(runtime_error);
+    virtual Definicao pesquisarDefTermo(Nome&) throw(runtime_error);
+    virtual bool alterarDefTermo(Nome&, Definicao&) throw(runtime_error);
     virtual bool removerDefTermo(Nome&) throw(runtime_error);
 
-    virtual bool inserirVocabulario(const Nome&, const TextoDef&, const Idioma&, const Data&) throw(runtime_error);
-    virtual VocabContr pesquisarDadosVocabulario(const Nome&) throw(runtime_error);
-    virtual bool alterarDefVocabulario(const Nome&, const TextoDef&, const Idioma&) throw(runtime_error);
-    virtual bool trocarIdiomaVocabulario(const Nome&, const Idioma&);
-    virtual Nome retornaVocabularios() throw(runtime_error);
-    virtual bool removerVocabulario(const Nome&) throw(runtime_error);
+    virtual bool inserirVocabulario(Nome&, TextoDef&, Idioma&, Data&) throw(runtime_error);
+    virtual VocabContr pesquisarDadosVocabulario(Nome&) throw(runtime_error);
+    virtual bool alterarDefVocabulario(Nome&, TextoDef&) throw(runtime_error);
+    virtual bool trocarIdiomaVocabulario(Nome&, Idioma&);
+    virtual Nome listNomeVocabularios() throw(runtime_error);
+    virtual bool removerVocabulario(Nome&) throw(runtime_error);
 
 
     virtual ~ISVocabulario();
