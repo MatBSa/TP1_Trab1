@@ -44,31 +44,31 @@
 	<iostream>
 	<string>
 
-1528655582 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\stubs.cpp
+1528750113 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\stubs.cpp
 	"Stubs.hpp"
 
-1528658192 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\stubs.hpp
+1528750654 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\stubs.hpp
 	"Interface.hpp"
 	<stdexcept>
 	<iostream>
 
-1528660373 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\interface.hpp
+1528845713 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\interface.hpp
 	"Dominios.hpp"
 	"Entidades.hpp"
 	<stdexcept>
 
-1526928480 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\controladoras.cpp
+1528841484 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\controladoras.cpp
 	"Controladoras.hpp"
 	"Comandos.hpp"
 
-1526926426 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\controladoras.hpp
+1528935003 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\controladoras.hpp
 	"Interface.hpp"
 	"Dominios.hpp"
 	<stdexcept>
 	<iostream>
 	<cstdlib>
 
-1526928480 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\comandos.hpp
+1528760314 c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\comandos.hpp
 	"Interface.hpp"
 	"Dominios.hpp"
 	"Entidades.hpp"
@@ -76,6 +76,6 @@
 	<iostream>
 	<cstdlib>
 
-1528658444 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\comandos.cpp
+1528934931 source:c:\users\mathe\documents\ciência da computação\tp1\trabalho de tp1\tp1_trab1\comandos.cpp
 	"Comandos.hpp"
 

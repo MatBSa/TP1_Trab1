@@ -38,30 +38,15 @@ private:
 
     ISVocabulario *cntrSVocabulario;
 
-public:
+    public:
 
-    /*VocabContr listarNomeVocabulario();
-    VocabContr apresentaDadosVocabulario();
-    VocabContr consultaTermo();
-    Definicao consultaDefTermo();
+    // Método previsto na interface por meio do qual é solicitada execução da controladora.
 
-    int criarTermo(const int&);
-    int editarTermo(const int&);
-    int excluirTermo(const int&);
+    void executar(const int&) throw(runtime_error);
 
-    int criarDefTermo(const int&);
-    int editarDefTermo(const int&);
-    int excluirDefTermo(const int&);
+    // Método por meio do qual é estabelecido relacionamento com o servidor.
 
-    int criarVocabulario(const int&);
-    int editarDefVocabulario(const int&);
-    int alterarIdiomaVocabulario(const int&);
-    int excluirVocabulario(const int&);*/
-
-    void executar(const int) throw(runtime_error);
-
-    void setCntrSVocabulario(ISVocabulario *cntrSVocabulario)
-    {
+    void setCntrSVocabulario(ISVocabulario *cntrSVocabulario){
         this->cntrSVocabulario = cntrSVocabulario;
     }
 

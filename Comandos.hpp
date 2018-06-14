@@ -13,11 +13,7 @@ class ComandoIAVocabulario {
 
 public:
 
-    // Método por meio do qual é solicitada a execução do comando.
-
     virtual void executar(ISVocabulario*) throw(runtime_error) = 0;
-
-    // Método destrutor virtual.
 
     virtual ~ComandoIAVocabulario(){}
 };

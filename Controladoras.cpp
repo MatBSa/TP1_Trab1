@@ -1,20 +1,15 @@
 #include "Controladoras.hpp"
 #include "Comandos.hpp"
 
-void CntrAVocabulario ::executar(const int codUsuario)throw(runtime_error)
+void CntrAVocabulario ::executar(const int &codUsuario)throw(runtime_error)
 {
     ComandoIAVocabulario *comando;
 
-    int opcao;
+    int opcao, desenvolvedor = 2, administrador = 3;
 
     while(true)
     {
 
-        // Ilustra limpeza de tela.
-
-        // system("CLS");
-
-        // Apresentar as opções.
 
         cout << endl << "Gerenciamento de Vocabulario." << endl << endl;
 
@@ -65,54 +60,94 @@ void CntrAVocabulario ::executar(const int codUsuario)throw(runtime_error)
             delete comando;
             break;
         case criarTermo:
+            if(codUsuario == desenvolvedor || codUsuario == administrador){
             comando = new ComandoIAVocabularioCriarTermo;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case editarTermo:
+            if(codUsuario == desenvolvedor || codUsuario == administrador){
             comando = new ComandoIAVocabularioEditarTermo;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case excluirTermo:
+            if(codUsuario == desenvolvedor || codUsuario == administrador){
             comando = new ComandoIAVocabularioExcluirTermo;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case criarDefinicaoTermo:
+            if(codUsuario == desenvolvedor || codUsuario == administrador){
             comando = new ComandoIAVocabularioCriarDefTer;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case editarDefinicaoTermo:
+            if(codUsuario == desenvolvedor || codUsuario == administrador){
             comando = new ComandoIAVocabularioEditarDefTer;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case excluirDefinicaoTermo:
+            if(codUsuario == desenvolvedor || codUsuario == administrador){
             comando = new ComandoIAVocabularioExcluirDefTer;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case criarVocabularioControlado:
+            if(codUsuario == administrador){
             comando = new ComandoIAVocabularioCriarVoc;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case editarDefinicaoVocabulario:
+            if(codUsuario == administrador){
             comando = new ComandoIAVocabularioEditarDefVoc;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case alterarIdiomaVocabulario:
+            if(codUsuario == administrador){
             comando = new ComandoIAVocabularioAltIdiomaVoc;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         case excluirVocabulario:
+            if(codUsuario == administrador){
             comando = new ComandoIAVocabularioExcluirVoc;
             comando->executar(cntrSVocabulario);
             delete comando;
+            }else{
+                cout << "Usuario nao autorizado a usar essa funcao." << excluirVocabulario << endl;
+            }
             break;
         }
 

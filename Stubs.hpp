@@ -8,9 +8,12 @@
 using namespace std;
 
 
-// classe implementa a interface.;;;
 
-class StubSVocabulario: public ISVocabulario
+class StubSVocabulario:public ISVocabulario
+/// Classe que simula o modulo de servico de vocabulario.
+/// Simula inclusao, pesquisa, alteracao e remocao de termos
+/// Simula inclusao, pesquisa, alteracao e remocao de definicao de termos
+/// Simula inclusao, pesquisa de dados, alteracao de definicao, troca de idioma, listagem de nome e remocao de vocabulario controlado
 {
 
 public:
@@ -27,7 +30,7 @@ public:
 
     bool incluirDefTermo(TextoDef&, Data&) throw(runtime_error);
     Definicao pesquisarDefTermo(Nome&) throw(runtime_error);
-    bool alterarDefTermo(Nome&, Definicao&) throw(runtime_error);
+    bool alterarDefTermo(Nome&, TextoDef&) throw(runtime_error);
     bool removerDefTermo(Nome&) throw(runtime_error);
 
     bool inserirVocabulario(Nome&, TextoDef&, Idioma&, Data&) throw(runtime_error);

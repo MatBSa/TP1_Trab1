@@ -4,7 +4,12 @@
 	<ActiveTarget name="Debug" />
 	<File name="Comandos.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="697" topLine="18" />
+			<Cursor1 position="247" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="Controladoras.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="458" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="Entidades.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -12,27 +17,19 @@
 			<Cursor1 position="24" topLine="21" />
 		</Cursor>
 	</File>
+	<File name="Interface.hpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="505" topLine="27" />
+		</Cursor>
+	</File>
 	<File name="TestesDominios.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="195" />
 		</Cursor>
 	</File>
-	<File name="Entidades.hpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Controladoras.hpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3565" topLine="77" />
-		</Cursor>
-		<Folding>
-			<Collapse line="12" />
-			<Collapse line="28" />
-			<Collapse line="36" />
-			<Collapse line="50" />
-			<Collapse line="218" />
-			<Collapse line="275" />
-		</Folding>
-	</File>
-	<File name="Controladoras.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1142" topLine="24" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="TestesDominios.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -40,61 +37,59 @@
 			<Cursor1 position="422" topLine="27" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Dominios.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="10862" topLine="87" />
 		</Cursor>
+		<Folding>
+			<Collapse line="9" />
+			<Collapse line="63" />
+			<Collapse line="72" />
+			<Collapse line="127" />
+			<Collapse line="136" />
+			<Collapse line="169" />
+			<Collapse line="177" />
+			<Collapse line="204" />
+			<Collapse line="216" />
+			<Collapse line="312" />
+			<Collapse line="351" />
+			<Collapse line="443" />
+			<Collapse line="460" />
+			<Collapse line="474" />
+			<Collapse line="483" />
+			<Collapse line="519" />
+			<Collapse line="528" />
+			<Collapse line="546" />
+			<Collapse line="561" />
+			<Collapse line="574" />
+			<Collapse line="590" />
+		</Folding>
 	</File>
-	<File name="Stubs.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Stubs.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="18496" topLine="45" />
+			<Cursor1 position="10781" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="5" />
-			<Collapse line="128" />
-			<Collapse line="192" />
-			<Collapse line="269" />
-			<Collapse line="326" />
-			<Collapse line="402" />
-			<Collapse line="459" />
-			<Collapse line="537" />
-			<Collapse line="588" />
-			<Collapse line="707" />
-			<Collapse line="724" />
-			<Collapse line="796" />
-			<Collapse line="921" />
 		</Folding>
 	</File>
 	<File name="TestesEntidades.hpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2779" topLine="125" />
+			<Cursor1 position="3705" topLine="148" />
 		</Cursor>
 	</File>
-	<File name="Comandos.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Dominios.hpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="318" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="Interface.hpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2282" topLine="48" />
-		</Cursor>
-	</File>
-	<File name="Dominios.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2058" topLine="54" />
+			<Cursor1 position="2058" topLine="0" />
 		</Cursor>
 		<Folding>
 			<Collapse line="10" />
-			<Collapse line="41" />
-			<Collapse line="72" />
-			<Collapse line="103" />
-			<Collapse line="133" />
-			<Collapse line="165" />
-			<Collapse line="190" />
-			<Collapse line="236" />
-			<Collapse line="266" />
 		</Folding>
+	</File>
+	<File name="Stubs.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="530" topLine="12" />
+		</Cursor>
 	</File>
 	<File name="TestesEntidades.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -119,27 +114,41 @@
 			<Collapse line="211" />
 		</Folding>
 	</File>
-	<File name="Controladoras.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2096" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="Dominios.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Entidades.hpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10862" topLine="36" />
+			<Cursor1 position="4224" topLine="29" />
 		</Cursor>
 		<Folding>
-			<Collapse line="9" />
-			<Collapse line="63" />
-			<Collapse line="72" />
-			<Collapse line="127" />
-			<Collapse line="136" />
-			<Collapse line="169" />
+			<Collapse line="12" />
+			<Collapse line="28" />
+			<Collapse line="36" />
+			<Collapse line="50" />
 		</Folding>
 	</File>
-	<File name="Stubs.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="Comandos.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1109" topLine="19" />
+			<Cursor1 position="14011" topLine="22" />
 		</Cursor>
+		<Folding>
+			<Collapse line="6" />
+			<Collapse line="21" />
+			<Collapse line="64" />
+			<Collapse line="106" />
+			<Collapse line="145" />
+			<Collapse line="197" />
+			<Collapse line="240" />
+			<Collapse line="276" />
+			<Collapse line="318" />
+			<Collapse line="360" />
+			<Collapse line="396" />
+			<Collapse line="450" />
+			<Collapse line="492" />
+			<Collapse line="536" />
+		</Folding>
 	</File>
 </CodeBlocks_layout_file>
