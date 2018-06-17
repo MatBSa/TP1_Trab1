@@ -15,14 +15,14 @@
      const static int tamNome = 20;
      string nome;
 
- //MÃ©todos Privados:
+ //Métodos Privados:
      void validar(string) throw (invalid_argument);
 
  public:
 
  /// Recebe  uma string e a armazena em um objeto desta classe.
- /// A string nÃ£o pode possuir digitos ou caracteres especiais,
- /// deve ter no maximo 20 caracteres, deve comeÃ§ar com uma letra
+ /// A string não pode possuir digitos ou caracteres especiais,
+ /// deve ter no maximo 20 caracteres, deve começar com uma letra
  /// maiuscula e esta deve ser a unica letra maiuscula.
      void setNome(string);
 
@@ -54,7 +54,7 @@
      void setSobreNome(string);
 /// Recebe  uma string e a armazena em um objeto desta classe.
 /// A string nao pode possuir digitos ou caracteres especiais,
-/// deve ter no maximo 20 caracteres, deve comeÃ§ar com uma letra
+/// deve ter no maximo 20 caracteres, deve começar com uma letra
 /// maiuscula e esta deve ser a unica letra maiuscula.
 
      string getSobreNome()
@@ -198,15 +198,15 @@ public:
      string nomeS;
      string senha;
 
- //MÃ©todos privados:
+ //Métodos privados:
 
- //Procura o nome do usuÃ¡rio dentro da senha.
- //Retorna verdadeiro caso exista e falso caso contrÃ¡rio.
+ //Procura o nome do usuário dentro da senha.
+ //Retorna verdadeiro caso exista e falso caso contrário.
      int contaChar(string);
- //Verifica se a senha escolhida obedece aos padrÃµes estabelecidos
+ //Verifica se a senha escolhida obedece aos padrões estabelecidos
      void validar(string) throw (invalid_argument);
 
- //Procura dentro da senha uma letra MaiÃºscula, uma minÃºscula e um dÃ¬gito
+ //Procura dentro da senha uma letra Maiúscula, uma minúscula e um dìgito
      bool procuraChar(string);
 
 
@@ -240,12 +240,12 @@ private:
 /*Atributos privados*/
     string texto;
 
-/*MÃ©todos privados*/
+/*Métodos privados*/
     bool validar(string);
 
 public:
 
-/*MÃ©todos PÃºblicos*/
+/*Métodos Públicos*/
         void setTexto(string) throw (invalid_argument);
 /// Recebe  uma string e a armazena em um objeto desta classe.
 /// A string deve ter no maximo 30 caracteres podendo eles ser quaisquer

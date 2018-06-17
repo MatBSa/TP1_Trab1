@@ -4,7 +4,7 @@
 
  using namespace std;
 
- /*------------------------------------------------M√©todos da classe Nome--------------------------------------------------------------*/
+ /*------------------------------------------------MÈtodos da classe Nome--------------------------------------------------------------*/
 
  void Nome::validar(string nome) throw (invalid_argument)
  {
@@ -19,14 +19,14 @@
      for(i=0;nome[i]!= '\0';i++)
      { // As strings terminam com \0
          if(i==tamNome)
-         {// se i = 20, o nome tem mais de tamNome caracteres, pois i come√ßa em zero
+         {// se i = 20, o nome tem mais de tamNome caracteres, pois i comeÁa em zero
              throw invalid_argument("O nome nao pode conter mais de 20 caracteres");
          }
      }
 
-     i=0; // reinicializa√ß√£o da vari√°vel de contagem
+     i=0; // reinicializaÁ„o da vari·vel de contagem
 
- //Verifica se a primeira letra do nome √© maiuscula.
+ //Verifica se a primeira letra do nome È maiuscula.
      while(achou != true && i<tamLetras)
      {
          if(nome[0] == letrasMaiusculas[i])
@@ -34,9 +34,9 @@
          i = i+1;
      }
      if(achou == false){
-         throw invalid_argument("\nNome n√£o come√ßa com letra maiuscula\n.");
+         throw invalid_argument("\nNome n„o comeÁa com letra maiuscula\n.");
      }
- // Verifica letra por letra do nome se alguma √© um n√∫mero inteiro
+ // Verifica letra por letra do nome se alguma È um n˙mero inteiro
      for(i=0; nome[i]!= '\0'; i++)
      {
          for(int i=0; j<=tamNumeros; j++)
@@ -47,7 +47,7 @@
              }
          }
      }
- // Verifica se alguma letra √© maiuscula al√©m da primeira
+ // Verifica se alguma letra È maiuscula alÈm da primeira
      for(i=1; nome[i]!= '\0'; i++)
      {
          for(j=0; j<tamLetras; j++)
@@ -67,7 +67,7 @@
  }
 
 
- /*-------------------------------------------------- M√©todos da classe Sobrenome-------------------------------------------------------*/
+ /*-------------------------------------------------- MÈtodos da classe Sobrenome-------------------------------------------------------*/
 
  void Sobrenome::validar(string sobrenome) throw (invalid_argument)
  {
@@ -88,9 +88,9 @@
          }
 
 
-     i=0; // reinicializa√ß√£o da vari√°vel de contagem
+     i=0; // reinicializaÁ„o da vari·vel de contagem
 
- //Verifica se a primeira letra do nome √© maiuscula.
+ //Verifica se a primeira letra do nome È maiuscula.
      while(achou != true && i<tamLetras)
      {
          if(sobrenome[0] == letrasMaiusculas[i])
@@ -98,9 +98,9 @@
          i = i+1;
      }
      if(achou == false){
-         throw invalid_argument("\nNome n√£o come√ßa com letra maiuscula\n.");
+         throw invalid_argument("\nNome n„o comeÁa com letra maiuscula\n.");
      }
- // Verifica letra por letra do nome se alguma √© um n√∫mero inteiro
+ // Verifica letra por letra do nome se alguma È um n˙mero inteiro
      for(i=0; sobrenome[i]!= '\0'; i++)
      {
          for(int i=0; j<=tamNumeros; j++)
@@ -111,7 +111,7 @@
              }
          }
      }
- // Verifica se alguma letra √© maiuscula al√©m da primeira
+ // Verifica se alguma letra È maiuscula alÈm da primeira
      for(i=1; sobrenome[i]!= '\0'; i++)
      {
          for(j=0; j<tamLetras; j++)
@@ -130,7 +130,7 @@
          this->sobrenome = sobrenome;
  }
 
- /*------------------------------------------------m√©todos da classe telefone-----------------------------------------------------------*/
+ /*------------------------------------------------mÈtodos da classe telefone-----------------------------------------------------------*/
 
 
  void Telefone::validar(string telefone) throw (invalid_argument)
@@ -141,7 +141,7 @@
      int i=0, j=0;
      bool achou=false;
 
-//Verifica se as posi√ß√µes s√£o numeros em telefone.
+//Verifica se as posiÁıes s„o numeros em telefone.
      for(i=0; telefone[i]!='\0' ; i++)
      {
                  while(achou != true && j<tamNumeros )
@@ -171,9 +171,9 @@
     validar(telefone);
     this->telefone = telefone;
  }
- /*------------------------------------------------------------M√©todos da classe Data---------------------------------------------------------------*/
+ /*------------------------------------------------------------MÈtodos da classe Data---------------------------------------------------------------*/
 
- /*Checa se a data est√° no formato DD/MM/AAAA onde D, M e A s√£o inteiros*/
+ /*Checa se a data est· no formato DD/MM/AAAA onde D, M e A s„o inteiros*/
  bool Data::validaFor(string data)
 {
     int carac;
@@ -318,7 +318,7 @@ string Data::validaData(string data)
 
      if(forVal == false)
      {
-        throw invalid_argument("\n Formato inv√°lido de data\n");
+        throw invalid_argument("\n Formato inv·lido de data\n");
      }
 
      dataVal = validaData(data);
@@ -355,13 +355,14 @@ bool Email::validar(string email)
     int carac;
     int posA=-1;
     int contaA=0;
-    char permitidos[19] = {'!','#','$','%','&','*','_','-','/','?','^','_','`','{','|','}','~',';','.'};
+    char permitidos[21] = {'!','#','$','%','&','*','_','-','/','?','^','_','`','{','|','}','~',';','.','\n','\0'};
     int chValido=0;
     bool achouInvalido;
     bool nDig = false;
     int fimEmail=0;
 
- //procura a posi√ß√£o do arroba para separar o local do dominio
+ //procura a posiÁ„o do arroba para separar o local do dominio
+
     for(i=0;email[i]!='\0';i++)
     {
         if(email[i]=='@')
@@ -371,24 +372,24 @@ bool Email::validar(string email)
         }
         fimEmail = i;
     }
- //ponto final n√£o pode ser o primeiro caractere nem o ultimo da parte local
- //pos@=-1 significa que n√£o foi colocado @
+ //ponto final n„o pode ser o primeiro caractere nem o ultimo da parte local
+ //pos@=-1 significa que n„o foi colocado @
     if(email[0]=='.' || email[posA-1] == '.' || posA==-1)
     {
         return(false);
     }
-// O email s√≥ pode ter um separador entre local e dominio
+// O email sÛ pode ter um separador entre local e dominio
     if(contaA!=1)
     {
         return(false);
     }
-// Procura algum caractere especial n√£o permitido no local
+// Procura algum caractere especial n„o permitido no local
     for(i=0;i<posA;i++)
     {
         carac = email[i];
         if((carac<65 || carac > 90) && (carac< 97 || carac > 122) && (carac<48 || carac>57) )
         {
-            for(j=0;j<19;j++)
+            for(j=0;j<21;j++)
             {
                 if(email[i]==permitidos[j])
                 {
@@ -397,26 +398,27 @@ bool Email::validar(string email)
             }
             if(chValido == 0 )
             {
+
                 achouInvalido = true;
             }
             chValido = 0;
         }
     }
-// testa se foi encontrao no local um caractere n√£o permitido
+// testa se foi encontrao no local um caractere n„o permitido
     if(achouInvalido == true)
     {
         return(false);
     }
 
-//A partir daqui √© feita a valida√ß√£o do dominio
+//A partir daqui È feita a validaÁ„o do dominio
 
-//Checa se o hifen √© o primeiro ou √∫ltimo caractere do dominio
+//Checa se o hifen È o primeiro ou ˙ltimo caractere do dominio
     if(email[posA+1]=='-' || email[fimEmail]=='-')
     {
          return(false);
     }
 
-//Checa se todos os caracteres do dominio s√£o numeros
+//Checa se todos os caracteres do dominio s„o numeros
     for(i=posA+1 ; email[i]!='\0' ; i++)
     {
         carac = email[i];
@@ -424,13 +426,13 @@ bool Email::validar(string email)
         {
             nDig = true;
         }
-// checa se co caractere percorrido √© permitido
+// checa se co caractere percorrido È permitido
         if((carac<48 || carac > 57) && (carac< 97 || carac > 122) && (carac<48 || carac>57) && email[i]!= '-')
         {
             return(false);
         }
     }
-//retorna falso se n√£o encontrar nenhum caractere que n√£o seja um digito
+//retorna falso se n„o encontrar nenhum caractere que n„o seja um digito
     if(nDig==false)
     {
         return(false);
@@ -453,7 +455,7 @@ void Email::setEmail(string email) throw(invalid_argument)
 }
 
 
- /*------------------------------------------------------------M√©todos da classe Senha-------------------------------------------------------------*/
+ /*------------------------------------------------------------MÈtodos da classe Senha-------------------------------------------------------------*/
 
 
 
@@ -522,7 +524,7 @@ void Email::setEmail(string email) throw(invalid_argument)
       this->senha = senha;
   }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
-                           //---------------M√©todos da classe TextoDeDefini√ß√£o------------------//
+                           //---------------MÈtodos da classe TextoDeDefiniÁ„o------------------//
 
  bool TextoDef::validar(string texto)
 
@@ -556,7 +558,7 @@ void Email::setEmail(string email) throw(invalid_argument)
     this->texto = texto;
  }
 /*------------------------------------------------------------------------------------------------------------------------------*/
-                           //------------------- M√©todos da classe Idioma----------------------//
+                           //------------------- MÈtodos da classe Idioma----------------------//
 
 bool Idioma::validar(string idioma)
 {
@@ -579,13 +581,13 @@ void Idioma::setIdioma(string idioma) throw (invalid_argument)
 
     if(idiomaVal==false)
     {
-        throw invalid_argument("\n Idioma n√£o reconhecido ! Os idiomas reconhecidos s√£o:\n ENG;\n GER \n FRA \n ITA \n POR \n SPA \n ");
+        throw invalid_argument("\n Idioma n„o reconhecido ! Os idiomas reconhecidos s„o:\n ENG;\n GER \n FRA \n ITA \n POR \n SPA \n ");
     }
     this->idioma = idioma;
 
 }
 /*------------------------------------------------------------------------------------------------------------------------------*/
-                               //-----------------M√©todos da classe de termo   ------------------ //
+                               //-----------------MÈtodos da classe de termo   ------------------ //
 
 bool ClasseDeTermo::validar (string claTer)
 {
@@ -610,12 +612,12 @@ void ClasseDeTermo::setClasse(string claTer) throw (invalid_argument)
 
     if(classeVal == false)
     {
-        throw invalid_argument("\n Classe de termos n√£o reconhecida \n");
+        throw invalid_argument("\n Classe de termos n„o reconhecida \n");
     }
 
     this->claTer = claTer;
 }
-/*-------------------------------------------------------M√©todos da classe Endere√ßo----------------------------------------------------------------*/
+/*-------------------------------------------------------MÈtodos da classe EndereÁo----------------------------------------------------------------*/
 
 void Endereco::validar(string endereco) throw (invalid_argument)
  {
@@ -628,7 +630,7 @@ void Endereco::validar(string endereco) throw (invalid_argument)
          // As strings terminam com \0
          if(i==tamEndereco)
          {
-             // se i = 20, o endereco tem mais de tamEndereco caracteres, pois i come√ßa em zero
+             // se i = 20, o endereco tem mais de tamEndereco caracteres, pois i comeÁa em zero
              throw invalid_argument("O endereco nao pode conter mais de 20 caracteres");
          }
      }
@@ -647,7 +649,7 @@ void Endereco::validar(string endereco) throw (invalid_argument)
 
      }
 
-     for(i=0; endereco[i]!='\0'; i++) //Verifica se ha dois espa√ßos em brancos ou mais consecutivos e lanca excessao.
+     for(i=0; endereco[i]!='\0'; i++) //Verifica se ha dois espaÁos em brancos ou mais consecutivos e lanca excessao.
      {
          if(endereco[i] == ' ')
          {

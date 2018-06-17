@@ -27,7 +27,7 @@ public:
 /// Armazena um objeto da classe de dominio Nome
 /// que contem o nome do usuario
     {
-        nomeVsSenha(nomeSet,senha);
+        //nomeVsSenha(nomeSet,senha);
         this->nome = nomeSet;
     }
 
@@ -156,7 +156,7 @@ class Administrador: public Desenvolvedor /// Esta classe representa usuarios co
 };
 
 
-/*--------------------------------------------Classe Vocabul√°rio controlado-----------------------------------------------------*/
+/*--------------------------------------------Classe Vocabul·rio controlado-----------------------------------------------------*/
 class VocabContr /// Classe que representa um vocabulario controlado
 /// Armazena dados de nome, idioma e data do vocabulario controlado
 {
@@ -268,7 +268,7 @@ public:
 
 };
 
-/*---------------------------------------------------- Classe Defini√ßao --------------------------------------------------------*/
+/*---------------------------------------------------- Classe DefiniÁao --------------------------------------------------------*/
 
 
 class Definicao /// Esta classe representa o significado de um termo
@@ -308,7 +308,6 @@ public:
     {
         return(data);
     }
-
 };
 
 #endif

@@ -3,52 +3,6 @@
 #include<iostream>
 
 
-/*-----------------------------------------MÃ©toos de Vocabulario controlado-----------------------------------------------------*/
-void VocabContr::setNome(string name)
-{
-    nome.setNome(name);
-}
-
-void VocabContr::setIdioma(string language)
-{
-    idioma.setIdioma(language);
-}
-
-void VocabContr::setData(string date)
-{
-    data.setData(date);
-}
-/*--------------------------------------MÃ©toos e Termo--------------------------------------------------------------------------*/
-
-void Termo::setNome(string name)
-{
-    nome.setNome(name);
-}
-
-
-void Termo::setData(string date)
-{
-    nome.setNome(date);
-}
-
-void Termo::setClasse(string clas)
-{
-    classe.setClasse(clas);
-}
-
-/*-------------------------------------Metoos de Definicao----------------------------------------------------------------------*/
-
-void Definicao::setTexto(string text)
-{
-    texto.setTexto(text);
-}
-
-void Definicao::setData(string date)
-{
-    data.setData(date);
-}
-
-
 
 void Leitor::nomeVsSenha(Nome nome,Senha senha) throw (invalid_argument)
 {
@@ -56,42 +10,41 @@ void Leitor::nomeVsSenha(Nome nome,Senha senha) throw (invalid_argument)
 
     string name = nome.getNome();
     string password = senha.getSenha();
-
     nomeNaSenha = findName(password,name);
-    //cout << name<<endl;
-   // cout << password<<endl;
+
+
     if(nomeNaSenha==true)
     {
-        throw invalid_argument("\nA senha contÃ©m o nome\n");
+        throw invalid_argument("\nA senha contém o nome\n");
 
     }
 }
 
- //Esse mÃ©todo tem que sair daqui e ir para as entidades de usuÃ¡rio.
+ //Esse método tem que sair daqui e ir para as entidades de usuário.
  bool Leitor::findName(string senha, string nomeS){
 
      const int tamNome = 20;
      const int tamSenha = 8;
-
+     cout<<senha<<endl;
+     //cout<<nomeS<<endl;
      char compara[tamNome];
      int i=0,j=0;
 
      for(i=0;i<8;i++)
      {
-     if(senha[i] == nomeS[0])                //Se alguma letra da senha Ã© igual Ã  primeira letra do nome
-         {                                   //As prÃ³ximas letras em sequÃªncia sÃ£o comparaas, atÃ© ser encontrada uma diferenÃ§a
-                                             //Ou atÃ© todos os demais caracteres terem sido comparados em sequÃªncia
+     if(senha[i] == nomeS[0])                //Se alguma letra da senha é igual à primeira letra do nome
+         {                                   //As próximas letras em sequência são comparaas, até ser encontrada uma diferença
+                                             //Ou até todos os demais caracteres terem sido comparados em sequência
              while(senha[i+j] == nomeS[j] || i+j <tamSenha){
-                 compara[j]= nomeS[j];       // Os caracteres iguais sÃ£o armazenaos
+                 compara[j]= nomeS[j];       // Os caracteres iguais são armazenaos
                  j=j+1;
 
              }
-             if(compara==nomeS) // Se o conjunto de caracteres iguais em sequÃªncia conseguir formar o nome
-                 return(true);  // Significa que a senha contÃ©m o nome.
+             if(compara==nomeS) // Se o conjunto de caracteres iguais em sequência conseguir formar o nome
+                 return(true);  // Significa que a senha contém o nome.
              else
                  j=0;
          }
      }
      return (false);
  }
-
