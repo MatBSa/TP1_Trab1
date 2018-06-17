@@ -1,12 +1,12 @@
-#ifndef MAAUT_H_INCLUDED
-#define MAAUT_H_INCLUDED
+#ifndef MAAUT_HPP_INCLUDED
+#define MAAUT_HPP_INCLUDED
 
 #include <iostream>
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
-#include "MACON.h"
-#include "ListaUSR.h"
+#include "Interface.hpp"
+#include "MACON.hpp"
+#include "ListaUSR.hpp"
 
 using namespace std;
 

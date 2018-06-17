@@ -1,10 +1,10 @@
 #include  <iostream>
-#include "MACON.h"
+#include "MACON.hpp"
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "MAUSR.h"
-#include "MAAUT.h"
-#include"ListaUSR.h"
+#include "MAUSR.hpp"
+#include "MAAUT.hpp"
+#include"ListaUSR.hpp"
 
 using namespace std;
 

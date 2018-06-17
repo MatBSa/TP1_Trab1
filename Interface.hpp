@@ -1,14 +1,16 @@
 #ifndef INTERFACES_HPP_INCLUDED
 #define INTERFACES_HPP_INCLUDED
 
-#include <iostream>
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "MACON.h"
-#include "ListaUSR.h"
-
+#include <stdexcept>
+#include <iostream>
+#include "MACON.hpp"
+#include "ListaUSR.hpp"
 
 using namespace std;
+
+
 /*------------------------Interface de apresentação de autenticação------------------------------*/
 class IaAut
 {
@@ -52,4 +54,53 @@ class IsUsr
   virtual void criarConta() throw (runtime_error) = 0;
 
 };
-#endif // INTERFACES_H_INCLUDED
+
+
+class ISVocabulario;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++Interfaces de Apresentacao++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*--------------------------------------------Classe Interface Vocabulário controlado-----------------------------------------------------*/
+class IAVocabulario
+{
+public:
+
+    virtual void executar(const int) throw(runtime_error) =0;
+
+    virtual void setCntrSVocabulario(ISVocabulario *) = 0;
+
+    virtual ~IAVocabulario() {}
+
+};
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++Interfaces de Servico++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*--------------------------------------------Classe Interface Vocabulário controlado-----------------------------------------------------*/
+class ISVocabulario
+{
+public:
+
+    virtual bool incluirTermo(Termo*) throw(runtime_error) = 0;
+    virtual Termo pesquisarTermo(Nome&) throw(runtime_error) = 0;
+    virtual bool alterarTermo(Nome&, ClasseDeTermo&) throw(runtime_error) = 0;
+    virtual bool removerTermo(Nome&) throw(runtime_error) = 0;
+
+    virtual bool incluirDefTermo(TextoDef&, Data&) throw(runtime_error) = 0;
+    virtual Definicao pesquisarDefTermo(Nome&) throw(runtime_error) = 0;
+    virtual bool alterarDefTermo(Nome&, TextoDef&) throw(runtime_error) = 0;
+    virtual bool removerDefTermo(Nome&) throw(runtime_error) = 0;
+
+    virtual bool inserirVocabulario(Nome&, TextoDef&, Idioma&, Data&) throw(runtime_error) = 0;
+    virtual VocabContr pesquisarDadosVocabulario(Nome&) throw(runtime_error) = 0;
+    virtual bool alterarDefVocabulario(Nome&, TextoDef&) throw(runtime_error) = 0;
+    virtual bool trocarIdiomaVocabulario(Nome&, Idioma&) = 0;
+    virtual Nome listarNomeVocabulario() throw(runtime_error) = 0;
+    virtual bool removerVocabulario(Nome&) throw(runtime_error) = 0;
+
+
+    virtual ~ISVocabulario(){}
+
+};
+
+
+#endif

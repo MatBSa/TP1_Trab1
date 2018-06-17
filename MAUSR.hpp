@@ -1,11 +1,11 @@
-#ifndef MAUSR_H_INCLUDED
-#define MAUSR_H_INCLUDED
+#ifndef MAUSR_HPP_INCLUDED
+#define MAUSR_HPP_INCLUDED
 
 #include <iostream>
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
-#include "MACON.h"
+#include "Interface.hpp"
+#include "MACON.hpp"
 
 
 using namespace std;

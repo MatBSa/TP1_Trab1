@@ -2,10 +2,10 @@
 #include "Dominios.hpp"
 #include "Dominios.cpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
-#include "MAAUT.h"
+#include "Interface.hpp"
+#include "MAAUT.hpp"
 #include "MSAUT.cpp"
-#include "MACON.h"
+#include "MACON.hpp"
 
 
 using namespace std;

@@ -1,7 +1,7 @@
-#ifndef LISTAUSR_H_INCLUDED
-#define LISTAUSR_H_INCLUDED
+#ifndef LISTAUSR_HPP_INCLUDED
+#define LISTAUSR_HPP_INCLUDED
 #include<list>
-#include "MACON.h"
+#include "MACON.hpp"
 
 using namespace std;
 

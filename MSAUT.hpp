@@ -1,11 +1,11 @@
-#ifndef MSAUT_H_INCLUDED
-#define MSAUT_H_INCLUDED
+#ifndef MSAUT_HPP_INCLUDED
+#define MSAUT_HPP_INCLUDED
 
 #include <iostream>
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
-#include "MACON.h"
+#include "interfaces.hpp"
+#include "MACON.hpp"
 
 
 class MsAut : public IsAut{

@@ -1,4 +1,4 @@
-#include "ListaUSR.h"
+#include "ListaUSR.hpp"
 
 ResultadoUSR ListaUSR::incluir (Usuario usuario,int tipoUsr)
 {

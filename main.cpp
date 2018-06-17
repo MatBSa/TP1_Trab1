@@ -1,19 +1,19 @@
 #include <iostream>
-#include "MAAUT.h"
+#include "MAAUT.hpp"
 #include "MAAUT.cpp"
 #include "Dominios.hpp"
 #include "Entidades.hpp"
 //#include "Entidades.cpp"
-#include "interfaces.h"
-#include "MSAUT.h"
+#include "Interface.hpp"
+#include "MSAUT.hpp"
 #include "MSAUT.cpp"
-#include "MACON.h"
+#include "MACON.hpp"
 #include "MACON.cpp"
-#include "MAUSR.h"
+#include "MAUSR.hpp"
 #include "MAUSR.cpp"
-#include "MSUSR.h"
+#include "MSUSR.hpp"
 #include "MSUSR.cpp"
-#include"ListaUSR.h"
+#include"ListaUSR.hpp"
 
 using namespace std;
 

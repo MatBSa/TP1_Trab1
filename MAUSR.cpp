@@ -1,10 +1,10 @@
 #include <iostream>
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
-#include "MAUSR.h"
-#include "MACON.h"
-#include "MSUSR.h"
+#include "Interface.hpp"
+#include "MAUSR.hpp"
+#include "MACON.hpp"
+#include "MSUSR.hpp"
 
 
 using namespace std;

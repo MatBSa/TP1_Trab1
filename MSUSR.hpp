@@ -1,10 +1,10 @@
-#ifndef MSUSR_H_INCLUDED
-#define MSUSR_H_INCLUDED
+#ifndef MSUSR_HPP_INCLUDED
+#define MSUSR_HPP_INCLUDED
 
-#include "MACON.h"
+#include "MACON.hpp"
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
+#include "interfaces.hpp"
 
 class MsUsr : public IsUsr
 {

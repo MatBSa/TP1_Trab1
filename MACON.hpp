@@ -1,5 +1,5 @@
-#ifndef MACON_H_INCLUDED
-#define MACON_H_INCLUDED
+#ifndef MACON_HPP_INCLUDED
+#define MACON_HPP_INCLUDED
 
 #include "Dominios.hpp"
 #include "Entidades.hpp"

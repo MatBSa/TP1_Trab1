@@ -1,6 +1,6 @@
 #include <iostream>
-#include "MSUSR.h"
-#include "MACON.h"
+#include "MSUSR.hpp"
+#include "MACON.hpp"
 #include "Dominios.hpp"
 #include "Entidades.hpp"
 

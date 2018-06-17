@@ -3,10 +3,10 @@
 
 #include "Dominios.hpp"
 #include "Entidades.hpp"
-#include "interfaces.h"
-#include "MAAUT.h"
-#include "MSAUT.h"
-#include "MACON.h"
+#include "interfaces.hpp"
+#include "MAAUT.hpp"
+#include "MSAUT.hpp"
+#include "MACON.hpp"
 
 bool MsAut:: autenticar(Usuario **usuario, int tipoUsr, ListaUSR **lista) throw(runtime_error)
 {
